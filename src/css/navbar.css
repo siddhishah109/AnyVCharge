@@ -1,0 +1,21 @@
+
+nav{
+    background-color: #4558bf;
+    color: white;
+    text-align: left;
+    
+}
+.name{
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+
+}
+
+.drawericon{
+    margin-left: 20px;
+}
+.navicon{
+    color: white;
+    padding: 8px;
+}
