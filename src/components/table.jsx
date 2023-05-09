@@ -29,7 +29,7 @@ const arr=[{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
 ]
 const TableData = () => {
   const [currentPage, setCurrentPage]=useState(1);
-  const recoedsPerPage=8;
+  const recoedsPerPage=9;
   const lastIndex=currentPage * recoedsPerPage;
   const firstIndex=lastIndex - recoedsPerPage;
   const records = arr.slice(firstIndex,lastIndex);
