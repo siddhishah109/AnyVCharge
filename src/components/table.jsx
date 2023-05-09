@@ -13,6 +13,14 @@ const arr=[{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
 {fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
 {fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
 {fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
 ]
 const TableData = () => {
   const [currentPage, setCurrentPage]=useState(1);
@@ -75,12 +83,18 @@ const TableData = () => {
 </div>
   )
   function nextPage(){
-
+    if(currentPage !==npage){
+      setCurrentPage(currentPage+1)
+    }
   }
-  function changeCPage(){
+  function changeCPage(id){
+    setCurrentPage(id)
 
   }
   function prePage(){
+    if(currentPage !== 1){
+      setCurrentPage(currentPage -1)
+    }
 
   }
 }
