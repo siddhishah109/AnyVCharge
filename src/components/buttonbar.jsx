@@ -1,8 +1,17 @@
 import React from 'react'
+import '../css/buttonbar.css'
+import DropdownTag from './dropdown'
+import CreatButton from './creatbutton'
 
 const ButtonBar = () => {
   return (
-    <div>
+    <div className='bar' >
+      <div className='bu'>
+        <DropdownTag/>
+        <CreatButton/>
+
+
+      </div>
       
     </div>
   )
