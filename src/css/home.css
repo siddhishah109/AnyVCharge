@@ -1,8 +1,8 @@
 
 .item2 { grid-area: menu; margin-right: 2px; width: 30vb;}
-.item3 { grid-area: main; height: 10vh; margin-top: 20px; width:177vb;}
+.item3 { grid-area: main; height: 8vh; margin-top: 20px; width:177vb;}
 
-.item5 { grid-area: table; height: 66vh; }
+.item5 { grid-area: table; height: 68vh; }
 
 .grid-container {
     display: grid;

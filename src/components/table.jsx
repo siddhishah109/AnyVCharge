@@ -1,11 +1,88 @@
 import React from 'react'
+import '../css/table.css'
+import { useState } from "react";
+import Table from 'react-bootstrap/Table';
+import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
+import DriveFileRenameOutlineOutlinedIcon from '@mui/icons-material/DriveFileRenameOutlineOutlined';
+const arr=[{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
+]
+const TableData = () => {
+  const [currentPage, setCurrentPage]=useState(1);
+  const recoedsPerPage=5;
+  const lastIndex=currentPage * recoedsPerPage;
+  const firstIndex=lastIndex - recoedsPerPage;
+  const records = arr.slice(firstIndex,lastIndex);
+  const npage = Math.ceil(arr.length / recoedsPerPage);
+  const numbers = [...Array(npage +1).keys()].slice(1);
 
-const Table = () => {
   return (
-    <div>
+<div>
+<Table striped className='tab'>
+      <thead>
+        <tr>
+          <th>Franchise Name</th>
+          <th>Mobile</th>
+          <th>Email</th>
+          <th>Logo</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+         {records.map((arrayData,i)=>{
+    return(
+    <tr>
+      <td>{arrayData.fn}</td>
+      <td>{arrayData.m}</td>
+      <td>{arrayData.e}</td>
+      <td>{arrayData.logo}</td>
+      <td><VisibilityOutlinedIcon/><DriveFileRenameOutlineOutlinedIcon/></td>
+    </tr>
+    )
+    }
+    )}
       
-    </div>
+      </tbody>
+    </Table>
+    <nav>
+      <ul className='pagination'>
+        <li className='page-item'>
+          <a href='#' className='page-link' onClick={prePage}>Prev</a>
+
+        </li>
+        {
+          numbers.map((n,i)=>(
+            <li className={`page-items ${currentPage === n? 'active' :''}`} key={i}>
+              <a href='#' className='page-link' onClick={()=>changeCPage(n)}>
+                {n}
+              </a>
+            </li>
+          ))
+        }
+         <li className='page-item'>
+          <a href='#' className='page-link' onClick={nextPage}>Next</a>
+
+        </li>
+      </ul>
+    </nav>
+</div>
   )
+  function nextPage(){
+
+  }
+  function changeCPage(){
+
+  }
+  function prePage(){
+
+  }
 }
 
-export default Table
+export default TableData

@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <nav className='navbar'>
         <DrawerNavigate/>
-        <h1 className='name'>AnyVCharge</h1>
+        <h1 className='name' onClick={'/home'}>AnyVCharge</h1>
         <main>
             <Link to='/notification' className='navicon'><IconButton size='medium'  color='inherit' aria-label='logo'><NotificationsNoneOutlinedIcon/></IconButton></Link>
             <Link to='/profile' className='navicon'><IconButton  size='medium'  color='inherit' aria-label='logo'><AccountCircleOutlinedIcon/></IconButton></Link>
