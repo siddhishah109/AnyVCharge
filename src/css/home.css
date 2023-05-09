@@ -1,5 +1,5 @@
 
-.item2 { grid-area: menu; margin-right: 2px; width: 30vb;}
+.item2 { grid-area: menu; margin-right: 2px; width: 30vb; margin-bottom: 2px;}
 .item3 { grid-area: main; height: 8vh; margin-top: 20px; width:177vb;}
 
 .item5 { grid-area: table; height: 73vh; }

@@ -11,7 +11,7 @@ const DrawerNavigate = () => {
     <>
     <IconButton  size='medium' edge='start' color='inherit' aria-label='logo' onClick={()=>setDrawerOpen(true)}><MenuIcon className='drawericon'/></IconButton>
     <Drawer anchor='left' open={isDrawerOpen} onClose={()=> setDrawerOpen(false)}>
-        hi
+       <a className='p-5' href='/'>Home</a>
 
 
 </Drawer>
