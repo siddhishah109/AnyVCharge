@@ -6,9 +6,9 @@ import VisibilityOutlinedIcon from '@mui/icons-material/VisibilityOutlined';
 import DriveFileRenameOutlineOutlinedIcon from '@mui/icons-material/DriveFileRenameOutlineOutlined';
 import KeyboardDoubleArrowLeftOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowLeftOutlined';
 import KeyboardDoubleArrowRightOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowRightOutlined';
-
-
 import { IconButton } from '@mui/material';
+
+
 const arr=[{fn:'Joule Point',m:'0000000000',e:'Joule@gmail.com',logo:''},
 {fn:'Joule Point',m:'0000000001',e:'Joule@gmail.com',logo:''},
 {fn:'Joule Point',m:'000000002',e:'Joule@gmail.com',logo:''},
@@ -55,8 +55,10 @@ const TableData = () => {
       <td>{arrayData.fn}</td>
       <td>{arrayData.m}</td>
       <td>{arrayData.e}</td>
-      <td>{arrayData.logo}</td>
-      <td><VisibilityOutlinedIcon/>    <DriveFileRenameOutlineOutlinedIcon/></td>
+      {/* <td>{arrayData.logo}</td> */}
+      <td><img alt='' src={arrayData.logo}/></td>
+
+      <td><VisibilityOutlinedIcon className='ac'/>    <DriveFileRenameOutlineOutlinedIcon/></td>
     </tr>
     )
     }

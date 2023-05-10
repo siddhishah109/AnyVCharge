@@ -2,11 +2,18 @@
 
 li{
     list-style-type: none;
-    font-size: 20px;
-    padding: 10px 0;
+    font-size: 15px;
+    padding: 12px 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 15px;
 
 }
 
 ul{
     padding: 0;
+}
+
+.lo{
+    margin-right: 8px;
 }

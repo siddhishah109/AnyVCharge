@@ -7,26 +7,18 @@ import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
 import AccountTreeOutlinedIcon from '@mui/icons-material/AccountTreeOutlined';
 import BatteryCharging80OutlinedIcon from '@mui/icons-material/BatteryCharging80Outlined';
 
-// const menudata=[{l:'PersonOutlineOutlinedIcon',d:'users'},
-// {l:'AirportShuttleOutlinedIcon',d:'Vehicles'},
-// {l:'BatteryCharging80OutlinedIcon',d:'Charging Station'},
-// {l:'PrecisionManufacturingOutlinedIcon',d:'Machine'},
-// {l:'LocalOfferOutlinedIcon',d:'Offer'},
-// {l:'AccountTreeOutlinedIcon',d:'Amenity'},
-// ]
-
 
 
 const Menu = () => {
   return (
     <div>
       <ul>
-      <li><PersonOutlineOutlinedIcon/>  users</li>
-      <li>< AirportShuttleOutlinedIcon/> Vehicles </li>
-      <li><BatteryCharging80OutlinedIcon />  Charging Station</li>
-      <li><PrecisionManufacturingOutlinedIcon /> Machine </li>
-      <li><LocalOfferOutlinedIcon /> Offer </li>
-      <li><AccountTreeOutlinedIcon /> Amenity </li>
+      <li><PersonOutlineOutlinedIcon className='lo'/>  users</li>
+      <li>< AirportShuttleOutlinedIcon className='lo'/> Vehicles </li>
+      <li><BatteryCharging80OutlinedIcon className='lo' />  Charging Station</li>
+      <li><PrecisionManufacturingOutlinedIcon className='lo' /> Machine </li>
+      <li><LocalOfferOutlinedIcon className='lo' /> Offer </li>
+      <li><AccountTreeOutlinedIcon className='lo' /> Amenity </li>
        
       </ul>
       
